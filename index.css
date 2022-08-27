@@ -21,3 +21,20 @@ body {
     margin-bottom: 40px;
 }
 
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > a {
+    margin: 10px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.nav > a:visited {
+    color: black;
+}
+
