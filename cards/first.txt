@@ -1,5 +1,5 @@
-Another terrible data
+Another terrible datum
 ---
-Data can be terrible.
+Datua can be terrible.
 ---
 Yes, this has been scientifically proven.
