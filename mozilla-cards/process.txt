@@ -1,0 +1,8 @@
+Using ChromeUtils instead of Services.ppmm
+---
+Change the call to get the processes
+---
+The Firefox desktop want to move away from using Services.ppmm to using ChromeUtils to get processes.
+The list of processes shown in about:support was using Servies.ppmm since ChromeUtils was relatively new and unstable when the code was written.
+I made a change to use ChromeUtils.getProcInfo and iterate over the childeren to get the processes instead.
+
