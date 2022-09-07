@@ -14,10 +14,10 @@ function cards(dir) {
   const app = document.getElementById("app");
 
   async function fetchCards() {
-    const cards = await fetch("/cards/files.json");
+    const cards = await fetch(`${dir}/files.json`);
     const cardsList = await cards.json();
     cardsList.forEach(async (filename) => {
-      const cardFile = await fetch(`/cards/${filename}`);
+      const cardFile = await fetch(`${dir}/${filename}`);
       const cardFileText = await cardFile.text();
       const cardBody = parseCard(cardFileText);
       const card = document.createElement("div");
